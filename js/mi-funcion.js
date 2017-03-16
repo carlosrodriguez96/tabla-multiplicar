@@ -20,7 +20,7 @@ var acumuladorApp = angular.module( 'acumuladorApp', [] );
                        for (var i =0; i <= 12; i++) {
                       
                        	var resultado=numero*i;
-                       	var result=result+"el resultado de"+numero+"*" +i+ " es "+resultado+"<br>";
+                       	var result=result+"el resultado de    "+numero+"  *  " +i+ " es "+resultado+"<br>";
                        	$scope.numdi=numero;
 
                        	document.getElementById('resul').innerHTML= result;
