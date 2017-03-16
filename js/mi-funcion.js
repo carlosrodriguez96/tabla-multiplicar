@@ -1,4 +1,5 @@
 
+
 var acumuladorApp = angular.module( 'acumuladorApp', [] );
         
         acumuladorApp.controller( "acumuladorAppCtrl",
@@ -19,9 +20,10 @@ var acumuladorApp = angular.module( 'acumuladorApp', [] );
                        for (var i =0; i <= 12; i++) {
                       
                        	var resultado=numero*i;
-                       	var result=result+" "+resultado;
+                       	var result=result+"el resultado de"+numero+"*" +i+ " es "+resultado+"<br>";
                        	$scope.numdi=numero;
-                       	$scope.resultado=result;
+
+                       	document.getElementById('resul').innerHTML= result;
                        }
 						
                     };
