@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<script type="text/javascript" src="js/angular.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
 
 </head>
 <body>
@@ -11,7 +11,7 @@
 <div class="container-fluid">
 	<input type="text" ng-change="cargar_datos()" ng-model="numero" id="numero">
 	<div class="row">
-	<div class="col-xs-12 col-md-2 col-lg-2">
+	<div class="col-xs-12 col-md-4 col-lg-4">
 	 <table class="table table-bordered">
     <thead>
       <tr>
@@ -23,7 +23,8 @@
     <tbody>
       <tr>
         <td>{{numdi}}</td>
-        <td>{{resultado}}</td>
+        <td><p id ="resul"></p></td>
+
 
       </tr>
      
