@@ -1,1 +1,38 @@
 
+<html lang="ES" ng-app="acumuladorApp">
+<head>
+	<title></title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+
+
+</head>
+<body>
+<div ng-controller="acumuladorAppCtrl">
+<div class="container-fluid">
+	<input type="text" ng-change="cargar_datos()" ng-model="numero" id="numero">
+	<div class="row">
+	<div class="col-xs-12 col-md-2 col-lg-2">
+	 <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Número digitado</th>
+        <th>Número 2</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{numdi}}</td>
+        <td>{{resultado}}</td>
+
+      </tr>
+     
+    </tbody>
+  </table>
+  </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="js/mi-funcion.js"></script>
+</body>
+</html>
